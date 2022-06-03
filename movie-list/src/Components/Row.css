@@ -1,0 +1,47 @@
+.row {
+  margin-left: 20px;
+}
+.row h2 {
+  color: #fff;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  cursor: pointer;
+}
+/* hidden scroll bar but its works */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.09);
+}
+
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.close_youtube_player {
+  color: #fff;
+  text-align: end;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.no_trailer {
+  color: #ff0000;
+  text-align: center;
+  font-size: 2rem;
+}
